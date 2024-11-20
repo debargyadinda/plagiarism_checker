@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plagiarism Checker</title>
+    <link href="static/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Plagiarism Checker</h1>
+            <p>Upload your text files to check for plagiarism.</p>
+
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <div>
+                    <label for="file">Choose .txt files:</label>
+                    <input type="file" id="file" name="file" accept=".txt" multiple>
+                </div>
+                <button type="submit">Check Plagiarism</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
